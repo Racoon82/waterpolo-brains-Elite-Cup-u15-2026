@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-slate-950">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterpolo Brains U15 | Portal de la Afición - Elite Cup Šabac 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0a2540',
+                            950: '#051424'
+                        },
+                        cyan: {
+                            400: '#00d2ff',
+                            500: '#00b8e6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(10, 37, 64, 0.75);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(0, 210, 255, 0.2);
+        }
+        .pulse-glow {
+            animation: pulse-glow-anim 2.5s infinite;
+        }
+        @keyframes pulse-glow-anim {
+            0%, 100% { box-shadow: 0 0 20px rgba(0, 210, 255, 0.25); }
+            50% { box-shadow: 0 0 35px rgba(0, 210, 255, 0.55); }
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(5, 20, 36, 0.6);
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(0, 210, 255, 0.3);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="h-full text-slate-100 flex flex-col font-sans bg-navy-950 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-navy-900 via-navy-950 to-black min-h-screen custom-scrollbar">
+
+    <!-- HEADER / HEADER PRINCIPAL -->
+    <header class="border-b border-cyan-500/20 sticky top-0 z-50 glass-panel">
+        <div class="max-w-5xl mx-auto px-4 py-3.5 flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Título y subtítulo -->
+            <div class="flex items-center space-x-3 w-full md:w-auto justify-between md:justify-start">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-gradient-to-tr from-sky-600 via-cyan-400 to-blue-600 p-2.5 rounded-2xl shadow-lg shadow-cyan-500/30 text-slate-950 flex items-center justify-center w-11 h-11 border border-cyan-200/40 shrink-0">
+                        <i class="fa-solid fa-water text-xl text-slate-950"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-black tracking-tight text-white flex items-center gap-2">
+                            Waterpolo Brains - Elite U15 Cup Šabac 2026
+                        </h1>
+                        <p class="text-xs text-cyan-400 font-medium">Página de la afición, padres y amigos para animar a todo el equipo de Waterpolo Brains.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Badges sociales / Enlaces rápidos -->
+            <div class="flex items-center gap-2.5 w-full md:w-auto justify-center md:justify-end shrink-0">
+                <a href="https://www.instagram.com/brainswaterpolo_aficion/" target="_blank" rel="noopener noreferrer" 
+                   class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold text-xs shadow-md hover:opacity-90 transition-opacity">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                    <span>@brainswaterpolo_aficion</span>
+                </a>
+                <a href="https://www.youtube.com/@vaterpoloklubsabac8354/streams" target="_blank" rel="noopener noreferrer" 
+                   class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs shadow-md transition-colors">
+                    <i class="fa-brands fa-youtube text-sm"></i>
+                    <span>@vaterpoloklubsabac8354</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 py-6 space-y-6">
+
+        <!-- PROMINENT HERO BANNER - PRÓXIMO PARTIDO -->
+        <section id="hero-banner" class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-navy-900 via-slate-900 to-navy-950 border border-cyan-500/40 p-6 sm:p-8 shadow-2xl pulse-glow">
+            <div class="absolute -right-12 -bottom-12 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-6 relative z-10">
+                <div class="space-y-3 text-center lg:text-left w-full lg:w-auto">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-extrabold bg-red-500/20 text-red-400 border border-red-500/30 uppercase tracking-wider">
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+                        Próximo Partido • Debut Fase de Grupos
+                    </div>
+                    
+                    <div class="flex items-center justify-center lg:justify-start gap-3 my-2">
+                        <span class="text-2xl sm:text-3xl font-black text-white tracking-tight">Waterpolo Brains</span>
+                        <span class="text-base font-bold text-cyan-400 px-2.5 py-1 bg-navy-950 rounded-lg border border-cyan-500/30">VS</span>
+                        <span class="text-2xl sm:text-3xl font-black text-slate-300 tracking-tight">Budva BR</span>
+                    </div>
+
+                    <p class="text-slate-300 text-sm flex items-center justify-center lg:justify-start gap-2 font-medium">
+                        <i class="fa-regular fa-calendar-check text-cyan-400 text-base"></i> 
+                        Hoy, 22-oct &bull; <strong class="text-white">17:00 CET</strong>
+                    </p>
+                </div>
+
+                <!-- Botón de Directo en YouTube -->
+                <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+                    <a href="https://www.youtube.com/watch?v=F76GPvWFTkI" target="_blank" rel="noopener noreferrer" 
+                       class="flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-red-600 hover:bg-red-500 text-white font-extrabold transition-all shadow-xl shadow-red-600/30 hover:scale-105 active:scale-95 text-center text-sm sm:text-base">
+                        <i class="fa-brands fa-youtube text-2xl"></i>
+                        Ver Partido en Directo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NAVEGACIÓN POR PESTAÑAS -->
+        <div class="flex bg-navy-900/90 p-1.5 rounded-2xl border border-cyan-500/20 gap-1 overflow-x-auto custom-scrollbar">
+            <button onclick="switchTab('matches')" id="tab-matches" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 bg-cyan-500 text-navy-950 shadow-lg whitespace-nowrap">
+                <i class="fa-solid fa-calendar-days text-base"></i> Partidos
+            </button>
+            <button onclick="switchTab('table')" id="tab-table" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 whitespace-nowrap">
+                <i class="fa-solid fa-trophy text-base"></i> Grupo A
+            </button>
+            <button onclick="switchTab('cheer')" id="tab-cheer" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 whitespace-nowrap">
+                <i class="fa-solid fa-heart text-base text-pink-500"></i> Muro de Apoyo
+            </button>
+            <button onclick="switchTab('links')" id="tab-links" class="flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 whitespace-nowrap">
+                <i class="fa-solid fa-link text-base"></i> Enlaces
+            </button>
+        </div>
+
+        <!-- SECCIONES -->
+
+        <!-- 1. PESTAÑA PARTIDOS -->
+        <section id="section-matches" class="space-y-4">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-water text-cyan-400"></i> Calendario y Emisiones de la Fase de Grupos
+                </h3>
+                <span class="text-xs text-slate-400 bg-navy-900 border border-cyan-500/20 px-3 py-1 rounded-full">Grupo A</span>
+            </div>
+
+            <div class="space-y-3">
+                <!-- Jornada 1 -->
+                <div class="glass-panel p-5 rounded-2xl border-l-4 border-l-cyan-400 hover:border-cyan-400/80 transition-all">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="text-xs font-bold text-cyan-400 bg-navy-950 border border-cyan-500/30 px-3 py-1 rounded-lg">
+                            Jornada 1
+                        </span>
+                        <span class="text-xs text-slate-300 font-semibold bg-navy-900/80 px-2.5 py-1 rounded-lg border border-slate-700/50">
+                            <i class="fa-regular fa-clock text-cyan-400 mr-1"></i> 22-oct - 17:00 CET
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between py-3 border-y border-slate-800 my-2 gap-4">
+                        <div class="flex items-center justify-between w-full sm:w-auto sm:justify-start gap-4 flex-1">
+                            <div class="font-black text-lg text-white">Waterpolo Brains</div>
+                            <span class="text-xs font-bold text-slate-500 bg-navy-950 px-2 py-1 rounded">VS</span>
+                            <div class="font-bold text-lg text-slate-300">Budva BR</div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 whitespace-nowrap">
+                            Hoy en Directo
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between pt-2 gap-3">
+                        <p class="text-xs text-slate-400">Emisión en vivo en el canal oficial</p>
+                        <a href="https://www.youtube.com/watch?v=F76GPvWFTkI" target="_blank" rel="noopener noreferrer"
+                           class="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-600/20 transition-all">
+                            <i class="fa-brands fa-youtube text-base"></i> Ver Jornada 1
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jornada 2 -->
+                <div class="glass-panel p-5 rounded-2xl border-l-4 border-l-slate-600 hover:border-cyan-400/50 transition-all">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="text-xs font-bold text-slate-300 bg-navy-950 border border-slate-700 px-3 py-1 rounded-lg">
+                            Jornada 2
+                        </span>
+                        <span class="text-xs text-slate-300 font-semibold bg-navy-900/80 px-2.5 py-1 rounded-lg border border-slate-700/50">
+                            <i class="fa-regular fa-clock text-cyan-400 mr-1"></i> 23-oct - 09:00 CET
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between py-3 border-y border-slate-800 my-2 gap-4">
+                        <div class="flex items-center justify-between w-full sm:w-auto sm:justify-start gap-4 flex-1">
+                            <div class="font-black text-lg text-white">Waterpolo Brains</div>
+                            <span class="text-xs font-bold text-slate-500 bg-navy-950 px-2 py-1 rounded">VS</span>
+                            <div class="font-bold text-lg text-slate-300">CSA Steaua</div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700 whitespace-nowrap">
+                            Próximo
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between pt-2 gap-3">
+                        <p class="text-xs text-slate-400">Emisión en vivo programada</p>
+                        <a href="https://www.youtube.com/watch?v=o0UtVY9JlOo" target="_blank" rel="noopener noreferrer"
+                           class="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-600/20 transition-all">
+                            <i class="fa-brands fa-youtube text-base"></i> Ver Jornada 2
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Jornada 3 -->
+                <div class="glass-panel p-5 rounded-2xl border-l-4 border-l-slate-600 hover:border-cyan-400/50 transition-all">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <span class="text-xs font-bold text-slate-300 bg-navy-950 border border-slate-700 px-3 py-1 rounded-lg">
+                            Jornada 3
+                        </span>
+                        <span class="text-xs text-slate-300 font-semibold bg-navy-900/80 px-2.5 py-1 rounded-lg border border-slate-700/50">
+                            <i class="fa-regular fa-clock text-cyan-400 mr-1"></i> 23-oct - 18:15 CET
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between py-3 border-y border-slate-800 my-2 gap-4">
+                        <div class="flex items-center justify-between w-full sm:w-auto sm:justify-start gap-4 flex-1">
+                            <div class="font-black text-lg text-white">Waterpolo Brains</div>
+                            <span class="text-xs font-bold text-slate-500 bg-navy-950 px-2 py-1 rounded">VS</span>
+                            <div class="font-bold text-lg text-slate-300">Partizan</div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-800 text-slate-400 border border-slate-700 whitespace-nowrap">
+                            Próximo
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-between pt-2 gap-3">
+                        <p class="text-xs text-slate-400">Emisión en vivo programada</p>
+                        <a href="https://www.youtube.com/watch?v=ssea-McimsM" target="_blank" rel="noopener noreferrer"
+                           class="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-600/20 transition-all">
+                            <i class="fa-brands fa-youtube text-base"></i> Ver Jornada 3
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. PESTAÑA GRUPO A -->
+        <section id="section-table" class="space-y-4 hidden">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-list-ol text-cyan-400"></i> Clasificación Grupo A
+                </h3>
+                <span class="text-xs text-slate-400">Elite U15 Cup Šabac 2026</span>
+            </div>
+
+            <div class="glass-panel rounded-2xl overflow-hidden border border-cyan-500/20">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm text-slate-300">
+                        <thead class="bg-navy-950/90 text-xs uppercase text-slate-400 border-b border-slate-800">
+                            <tr>
+                                <th class="py-3.5 px-4 font-bold">Equipo</th>
+                                <th class="py-3.5 px-3 text-center">PJ</th>
+                                <th class="py-3.5 px-3 text-center">PG</th>
+                                <th class="py-3.5 px-3 text-center">PE</th>
+                                <th class="py-3.5 px-3 text-center">PP</th>
+                                <th class="py-3.5 px-3 text-center">GF/GC</th>
+                                <th class="py-3.5 px-4 text-center font-bold text-cyan-400">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/80 font-medium">
+                            <tr class="bg-cyan-500/10 font-bold border-l-4 border-l-cyan-400 text-white">
+                                <td class="py-3.5 px-4 flex items-center gap-2">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                                    Waterpolo Brains
+                                </td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0-0</td>
+                                <td class="py-3.5 px-4 text-center text-cyan-400 font-black text-base">0</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="py-3.5 px-4 font-semibold text-slate-200">Partizan</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0-0</td>
+                                <td class="py-3.5 px-4 text-center font-bold">0</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="py-3.5 px-4 font-semibold text-slate-200">CSA Steaua</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0-0</td>
+                                <td class="py-3.5 px-4 text-center font-bold">0</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/40">
+                                <td class="py-3.5 px-4 font-semibold text-slate-200">Budva BR</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0</td>
+                                <td class="py-3.5 px-3 text-center">0-0</td>
+                                <td class="py-3.5 px-4 text-center font-bold">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 italic text-right">*Tabla actualizada según los resultados de la competición.</p>
+        </section>
+
+        <!-- 3. PESTAÑA MURO DE APOYO -->
+        <section id="section-cheer" class="space-y-4 hidden">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-heart text-pink-500"></i> Muro de Ánimo de la Afición
+                </h3>
+                <span class="text-xs text-cyan-400 font-semibold">#MareaAzul</span>
+            </div>
+
+            <!-- Formulario de envío -->
+            <div class="glass-panel p-5 rounded-2xl border border-cyan-500/30 space-y-3">
+                <h4 class="font-bold text-sm text-slate-200">Enviar mensaje para el equipo</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <input type="text" id="cheer-author" placeholder="Tu nombre / familia (ej. Familia Mondini)" 
+                           class="bg-navy-950 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors">
+                    <input type="text" id="cheer-text" placeholder="Escribe tu mensaje de ánimo..." 
+                           class="bg-navy-950 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition-colors">
+                </div>
+                <button onclick="addCheerMessage()" class="w-full sm:w-auto px-6 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-navy-950 font-black rounded-xl text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-paper-plane text-xs"></i> Publicar Mensaje
+                </button>
+            </div>
+
+            <!-- Lista de Mensajes -->
+            <div id="cheer-list" class="space-y-3 max-h-96 overflow-y-auto custom-scrollbar pr-1">
+                <!-- Se cargan dinámicamente con JS -->
+            </div>
+        </section>
+
+        <!-- 4. PESTAÑA ENLACES -->
+        <section id="section-links" class="space-y-4 hidden">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-up-right-from-square text-cyan-400"></i> Enlaces Útiles
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/brainswaterpolo_aficion/" target="_blank" rel="noopener noreferrer" 
+                   class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-pink-500/50 transition-all group border-l-4 border-l-pink-500">
+                    <div class="bg-gradient-to-tr from-purple-600 via-pink-600 to-amber-500 p-3.5 rounded-xl text-white group-hover:scale-110 transition-transform shrink-0">
+                        <i class="fa-brands fa-instagram text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white group-hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                            Instagram Afición
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                        </h4>
+                        <p class="text-xs text-slate-400 mt-1">@brainswaterpolo_aficion • Fotos, vídeos y contenido de la grada.</p>
+                    </div>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@vaterpoloklubsabac8354/streams" target="_blank" rel="noopener noreferrer" 
+                   class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-red-500/50 transition-all group border-l-4 border-l-red-500">
+                    <div class="bg-red-500/10 p-3.5 rounded-xl text-red-500 group-hover:scale-110 transition-transform shrink-0">
+                        <i class="fa-brands fa-youtube text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white group-hover:text-red-400 transition-colors flex items-center gap-1.5">
+                            Canal de YouTube del Torneo
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                        </h4>
+                        <p class="text-xs text-slate-400 mt-1">@vaterpoloklubsabac8354 • Emisiones oficiales en directo.</p>
+                    </div>
+                </a>
+
+                <!-- Total Waterpolo -->
+                <a href="https://total-waterpolo.com/elite-u15-cup-sabac-2026/" target="_blank" rel="noopener noreferrer" 
+                   class="glass-panel p-5 rounded-2xl flex items-start gap-4 hover:border-cyan-400/50 transition-all group border-l-4 border-l-cyan-400 md:col-span-2">
+                    <div class="bg-cyan-500/10 p-3.5 rounded-xl text-cyan-400 group-hover:scale-110 transition-transform shrink-0">
+                        <i class="fa-solid fa-globe text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white group-hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+                            Web Oficial del Torneo (Total Waterpolo)
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-500"></i>
+                        </h4>
+                        <p class="text-xs text-slate-400 mt-1">Actas oficiales, tablas de grupos, cruces de la fase final y marcadores actualizados.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 mt-auto py-6 text-center text-xs text-slate-500 glass-panel">
+        <p class="font-bold text-slate-400">Waterpolo Brains • Elite U15 Cup Šabac 2026</p>
+        <p class="mt-1">Página de la afición, padres y amigos para animar a todo el equipo de Waterpolo Brains.</p>
+    </footer>
+
+    <!-- LÓGICA INTERACTIVA -->
+    <script>
+        const initialCheerMessages = [
+            { author: "Familia Brains", text: "¡A por todas chicos! A disfrutar de la experiencia en Serbia y a darlo todo en el agua. ¡Vamos Brains!", time: "Hace 10 min" },
+            { author: "Marea Azul", text: "¡Muchísima suerte a todo el equipo en el debut contra Budva! Os animamos desde España.", time: "Hace 25 min" },
+            { author: "Afición Waterpolo", text: "¡Orgullosos de vosotros! A defender los colores con garra.", time: "Hace 1 hora" }
+        ];
+
+        function switchTab(tabName) {
+            const tabs = ['matches', 'table', 'cheer', 'links'];
+            tabs.forEach(tab => {
+                const section = document.getElementById(`section-${tab}`);
+                const tabBtn = document.getElementById(`tab-${tab}`);
+                if (tab === tabName) {
+                    section.classList.remove('hidden');
+                    tabBtn.className = "flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 bg-cyan-500 text-navy-950 shadow-lg whitespace-nowrap";
+                } else {
+                    section.classList.add('hidden');
+                    tabBtn.className = "flex-1 py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 text-slate-400 hover:text-slate-200 whitespace-nowrap";
+                }
+            });
+        }
+
+        function loadMessages() {
+            const saved = localStorage.getItem('brains_cheer_messages');
+            const messages = saved ? JSON.parse(saved) : initialCheerMessages;
+            const cheerList = document.getElementById('cheer-list');
+            cheerList.innerHTML = '';
+
+            messages.forEach(msg => {
+                appendMessageToDOM(msg.author, msg.text, msg.time);
+            });
+        }
+
+        function addCheerMessage() {
+            const authorInput = document.getElementById('cheer-author');
+            const textInput = document.getElementById('cheer-text');
+
+            if (!textInput.value.trim()) return;
+
+            const author = authorInput.value.trim() || 'Aficionado de Brains';
+            const text = textInput.value.trim();
+            const time = "Justo ahora";
+
+            const saved = localStorage.getItem('brains_cheer_messages');
+            const messages = saved ? JSON.parse(saved) : [...initialCheerMessages];
+            messages.unshift({ author, text, time });
+            localStorage.setItem('brains_cheer_messages', JSON.stringify(messages));
+
+            loadMessages();
+            textInput.value = '';
+        }
+
+        function appendMessageToDOM(author, text, time) {
+            const cheerList = document.getElementById('cheer-list');
+            const newMsg = document.createElement('div');
+            newMsg.className = "bg-navy-900/80 p-4 rounded-xl border border-slate-800 shadow-sm";
+            newMsg.innerHTML = `
+                <div class="flex justify-between items-center mb-1.5">
+                    <span class="font-bold text-cyan-400 text-sm flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-group text-xs text-cyan-500"></i> ${escapeHtml(author)}
+                    </span>
+                    <span class="text-[11px] text-slate-500">${escapeHtml(time)}</span>
+                </div>
+                <p class="text-slate-200 text-sm font-normal">${escapeHtml(text)}</p>
+            `;
+            cheerList.appendChild(newMsg);
+        }
+
+        function escapeHtml(text) {
+            return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+        window.onload = function() {
+            loadMessages();
+        };
+    </script>
+</body>
+</html>
